@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ------------------- Navbar --------------- */
+.navBar {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(230, 225, 225);
+  height: 70px;
+}
+
+.logo-container h1 {
+  font-weight: 500;
+  color: rgb(253, 3, 3);
+}
+
+.product-catagories {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.product-catagories a {
+  font-weight: 300;
+  color: black;
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+
+.product-catagories a:hover {
+  font-weight: 600;
+}
+
+.cart-logo {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.cart-logo:hover {
+  color: rgb(253, 3, 3);
+}
