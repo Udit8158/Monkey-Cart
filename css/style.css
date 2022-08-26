@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+.d-none {
+  display: none;
+}
+
 /* ------------------- Navbar --------------- */
 .navBar {
   display: flex;
@@ -21,12 +25,46 @@ a {
 .logo-container h1 {
   font-weight: 500;
   color: rgb(253, 3, 3);
+  cursor: pointer;
+}
+
+.cancel-icon {
+  font-size: 2rem;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  cursor: pointer;
+  color: black;
+  transition: 0.5s;
+}
+
+.cancel-icon:hover {
+  color: white;
 }
 
 .product-catagories {
   display: flex;
   justify-content: space-between;
   width: 60%;
+}
+
+.sm-product-catagories {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 60%;
+  background: rgb(238, 69, 69);
+  color: white;
+  /* display: none; */
+  /* Try to give animation */
+  /* animation-name: openMenu;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s; */
 }
 
 .product-catagories a {
@@ -36,15 +74,50 @@ a {
   transition: 0.5s;
 }
 
+.sm-product-catagories a {
+  font-weight: 300;
+  color: white;
+  font-size: 1.2rem;
+  transition: 0.5s;
+  margin-top: 40px;
+}
+
 .product-catagories a:hover {
+  font-weight: 600;
+}
+.sm-product-catagories a:hover {
   font-weight: 600;
 }
 
 .cart-logo {
   font-size: 1.6rem;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .cart-logo:hover {
   color: rgb(253, 3, 3);
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* TODO: Not able to animate */
+/* Animation */
+@keyframes openMenu {
+  from {
+    display: none;
+  }
+  to {
+    display: flex;
+  }
+}
+@keyframes closeMenu {
+  from {
+    display: flex;
+  }
+  to {
+    display: none;
+  }
 }

@@ -1,0 +1,40 @@
+@media (max-width: 1050px) {
+  .product-catagories {
+    display: none;
+  }
+  /* .sm-product-catagories {
+    display: flex;
+  } */
+  .logo-container {
+    position: absolute;
+    left: 10px;
+  }
+  .cart-logo {
+    position: absolute;
+    bottom: 4px;
+    right: 12px;
+    display: none;
+  }
+
+  .cart-logo:hover {
+    color: white;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 2rem;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .menu-icon:hover {
+    color: rgb(253, 3, 3);
+  }
+}
+
+@media (max-width: 300px) {
+  .sm-product-catagories {
+    width: 100%;
+  }
+}
