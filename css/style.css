@@ -84,6 +84,7 @@ a {
 
 .product-catagories a:hover {
   font-weight: 600;
+  /* text-decoration: none; */
 }
 .sm-product-catagories a:hover {
   font-weight: 600;
@@ -120,4 +121,77 @@ a {
   to {
     display: none;
   }
+}
+
+/* ---------------- Section Product Container ------------- */
+.product-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 2.7rem;
+}
+
+.product-heading {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.3rem;
+}
+
+.product-row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+}
+
+.product-item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.product-item:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.product-item h2 {
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.product-item p {
+  font-weight: 300;
+}
+
+.row {
+  margin-top: 15px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-to-cart-btn {
+  width: 200px;
+  padding: 4px;
+  outline: none;
+  background: rgb(42, 70, 226);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  height: 40px;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: rgb(108, 108, 255);
+  color: black;
+}
+
+.price {
+  font-size: 1.2rem;
 }
