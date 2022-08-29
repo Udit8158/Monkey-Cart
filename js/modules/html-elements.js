@@ -14,3 +14,5 @@ export const productRow = document.querySelector(".product-row");
 
 // Product catagories
 export const catagories = Array.from(document.querySelectorAll(".catagories"));
+
+export const addToCartBtn = document.querySelectorAll(".add-to-cart-btn");
