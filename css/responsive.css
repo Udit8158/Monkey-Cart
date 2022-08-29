@@ -1,4 +1,4 @@
-@media (max-width: 1050px) {
+@media (max-width: 1200px) {
   .product-catagories {
     display: none;
   }
@@ -30,6 +30,21 @@
   }
   .menu-icon:hover {
     color: rgb(253, 3, 3);
+  }
+
+  .product-row {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .product-container {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .product-row {
+    grid-template-columns: auto;
   }
 }
 

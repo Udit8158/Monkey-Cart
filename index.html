@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/responsive.css" />
 
     <!-- Add Own JS File -->
-    <script src="./js/app.js" defer type="module"></script>
+   
 
     <title>MonkeyKart | A add to cart project by only vanila JS</title>
   </head>
@@ -30,25 +30,24 @@
     <!-- Navbar section -->
     <section class="navBar">
       <div class="logo-container">
-        <h1>MonkeyKart</h1>
+        <h1 ondblclick="clickMe()">MonkeyKart</h1>
       </div>
       <div class="product-catagories">
-        <a href="#">Product</a>
-        <a href="#">Electronics</a>
-        <a href="#">Jewelery</a>
-        <a href="#">Men's Clothing</a>
-        <a href="#">Women's Clothing</a>
+        <a href="#" class="catagories" id="electronics" class="active">Electronics</a>
+        <a href="#" class="catagories" id="jewelery">Jewelery</a>
+        <a href="#" class="catagories" id="men's clothing">Men's Clothing</a>
+        <a href="#" class="catagories" id="women's clothing" >Women's Clothing</a>
       </div>
       <!-- Nav menu for mobile devices -->
       <div class="sm-catagory-section d-none">
         <div class="sm-product-catagories">
           <i class="fa-solid fa-xmark cancel-icon"></i>
 
-          <a href="#">Product</a>
-          <a href="#">Electronics</a>
-          <a href="#">Jewelery</a>
-          <a href="#">Men's Clothing</a>
-          <a href="#">Women's Clothing</a>
+         
+          <a href="#" class="catagories" id="electronics">Electronics</a>
+          <a href="#" class="catagories" id="jewelery">Jewelery</a>
+          <a href="#" class="catagories" id="men's clothing">Men's Clothing</a>
+          <a href="#" class="catagories" id="women's clothing">Women's Clothing</a>
         </div>
       </div>
 
@@ -63,7 +62,7 @@
       <h1 class="product-heading">Chose Our Best Producs</h1>
       <div class="product-row">
         <!-- Product Items -->
-        <div class="product-item">
+        <!-- <div class="product-item">
           <img src="./demo-product.jpg" alt="demo-product" />
           <h2>Demo Name</h2>
           <p>
@@ -74,128 +73,10 @@
             <span class="price">Price: 243$</span>
             <button class="add-to-cart-btn">Add To Cart</button>
           </div>
-        </div>
-        <div class="product-item">
-          <img src="./demo-product.jpg" alt="demo-product" />
-          <h2>Demo Name</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            enim incidunt corporis deleniti officia?
-          </p>
-          <div class="row">
-            <span class="price">Price: 243$</span>
-            <button class="add-to-cart-btn">Add To Cart</button>
-          </div>
-        </div>
-        <div class="product-item">
-          <img src="./demo-product.jpg" alt="demo-product" />
-          <h2>Demo Name</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            enim incidunt corporis deleniti officia?
-          </p>
-          <div class="row">
-            <span class="price">Price: 243$</span>
-            <button class="add-to-cart-btn">Add To Cart</button>
-          </div>
-        </div>
-        <div class="product-item">
-          <img src="./demo-product.jpg" alt="demo-product" />
-          <h2>Demo Name</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            enim incidunt corporis deleniti officia?
-          </p>
-          <div class="row">
-            <span class="price">Price: 243$</span>
-            <button class="add-to-cart-btn">Add To Cart</button>
-          </div>
-        </div>
-        <div class="product-item">
-          <img src="./demo-product.jpg" alt="demo-product" />
-          <h2>Demo Name</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            enim incidunt corporis deleniti officia?
-          </p>
-          <div class="row">
-            <span class="price">Price: 243$</span>
-            <button class="add-to-cart-btn">Add To Cart</button>
-          </div>
-        </div>
-        <div class="product-item">
-          <img src="./demo-product.jpg" alt="demo-product" />
-          <h2>Demo Name</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            enim incidunt corporis deleniti officia?
-          </p>
-          <div class="row">
-            <span class="price">Price: 243$</span>
-            <button class="add-to-cart-btn">Add To Cart</button>
-          </div>
-        </div>
-        <div class="product-item">
-          <img src="./demo-product.jpg" alt="demo-product" />
-          <h2>Demo Name</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            enim incidunt corporis deleniti officia?
-          </p>
-          <div class="row">
-            <span class="price">Price: 243$</span>
-            <button class="add-to-cart-btn">Add To Cart</button>
-          </div>
-        </div>
-        <div class="product-item">
-          <img src="./demo-product.jpg" alt="demo-product" />
-          <h2>Demo Name</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            enim incidunt corporis deleniti officia?
-          </p>
-          <div class="row">
-            <span class="price">Price: 243$</span>
-            <button class="add-to-cart-btn">Add To Cart</button>
-          </div>
-        </div>
-        <div class="product-item">
-          <img src="./demo-product.jpg" alt="demo-product" />
-          <h2>Demo Name</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            enim incidunt corporis deleniti officia?
-          </p>
-          <div class="row">
-            <span class="price">Price: 243$</span>
-            <button class="add-to-cart-btn">Add To Cart</button>
-          </div>
-        </div>
-        <div class="product-item">
-          <img src="./demo-product.jpg" alt="demo-product" />
-          <h2>Demo Name</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            enim incidunt corporis deleniti officia?
-          </p>
-          <div class="row">
-            <span class="price">Price: 243$</span>
-            <button class="add-to-cart-btn">Add To Cart</button>
-          </div>
-        </div>
-        <div class="product-item">
-          <img src="./demo-product.jpg" alt="demo-product" />
-          <h2>Demo Name</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            enim incidunt corporis deleniti officia?
-          </p>
-          <div class="row">
-            <span class="price">Price: 243$</span>
-            <button class="add-to-cart-btn">Add To Cart</button>
-          </div>
-        </div>
-      </div>
+        </div> -->
+        
     </section>
+    
+     <script src="./js/app.js"  type="module"></script>
   </body>
 </html>

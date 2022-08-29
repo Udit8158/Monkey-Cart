@@ -12,6 +12,10 @@ a {
   display: none;
 }
 
+body {
+  background-color: antiquewhite;
+}
+
 /* ------------------- Navbar --------------- */
 .navBar {
   display: flex;
@@ -128,6 +132,7 @@ a {
   width: 80%;
   margin: auto;
   margin-top: 2.7rem;
+  /* color: rgb(221, 213, 203); */
 }
 
 .product-heading {
@@ -149,10 +154,17 @@ a {
   justify-content: center;
   align-items: center;
   transition: 0.5s;
+  /* height: 650px; */
+  background: white;
 }
 
 .product-item:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+  width: 60%;
+  height: 50%;
 }
 
 .product-item h2 {
@@ -194,4 +206,8 @@ a {
 
 .price {
   font-size: 1.2rem;
+}
+
+.active {
+  text-align: center;
 }
